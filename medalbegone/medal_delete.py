@@ -4,7 +4,7 @@ import setup
 
 
 
-description = "Type $info to see more information."
+description = "Type !info to see more information."
 TOKEN = setup.TOK
 client = commands.Bot(command_prefix='!', description=description, help_command=None)
 client.UID = 0
@@ -17,7 +17,7 @@ async def on_ready():
     initcount = 0
     for g in client.guilds:
         initcount = initcount + len(g.members)
-    game = discord.Game("azusa")
+    game = discord.Game("Removing Medal.tv Links!")
     await client.change_presence(status=discord.Status.online, activity=game)
 
 @client.event
@@ -38,7 +38,7 @@ async def on_message(message):
     if message.author == client.user:   
         return
     if "medal.tv" in message.content and message.author.id !=299685173262286849:
-        print("liberal destroyed: " + message.author.name)
+        print("Deleted the highlight link of: " + message.author.name)
         await message.delete()  
         
     await client.process_commands(message)
