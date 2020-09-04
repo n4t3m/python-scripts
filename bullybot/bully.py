@@ -34,14 +34,10 @@ async def on_guild_remove(guild):
 
 @client.event
 async def on_voice_state_update(member, before, after):
-    print('yahllo')
-    print(member.id)
     print(client.UID)
     if member.id != client.UID:
-        print('wehere')
-        print(member.id == client.UID)
         return
-    print('made it here')
+    print("Muted " + member.nick + ' Again!')
     await member.edit(mute=True)
     return
     
