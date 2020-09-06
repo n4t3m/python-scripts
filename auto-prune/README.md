@@ -2,4 +2,4 @@ This bot will automatically delete or "purge" messages that are sent in a channe
 
 Watch the video below (click the image or link):
 
-[![Demo](https://i.imgur.com/Bcfkg8Q.png)](https://youtu.be/IYeL-ieLazk "Demo")
+[![Demo](https://i.imgur.com/Bcfkg8Q.png)](https://youtu.be/dHQdAGczV5A "Demo")
