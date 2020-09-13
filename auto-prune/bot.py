@@ -42,7 +42,7 @@ async def on_message(message):
             existingData = json.load(json_file)
         t_data = existingData
         d = t_data[str(message.guild.id)]
-        await remove(message, d)
+        await remove_msg(message, d)
         return
 
 
@@ -130,7 +130,7 @@ async def remove(ctx):
     with open("guilds.json", "w") as write_file:
         json.dump(data, write_file)
 
-    await remove(ctx.message, 5)
+    await remove_msg(ctx.message, 5)
 
 @bot.command()
 async def delay(ctx, d: int):
@@ -159,7 +159,7 @@ async def checkdelay(ctx):
     with open("delays.json", "w") as write_file:
         json.dump(data, write_file)
 
-async def remove(message, delay):
+async def remove_msg(message, delay):
     c_name = message.channel.name
     g_name = message.guild.name
     await asyncio.sleep(delay) 
