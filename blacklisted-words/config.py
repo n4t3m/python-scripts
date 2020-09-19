@@ -1,0 +1,5 @@
+TOK = ""
+PREFIX = "bl!"
+STATUS = "Current Demo: Blacklist"
+DESC = "Blacklisted Words Bot"
+MESSAGE = "Blacklisted Word Detected!!!"
