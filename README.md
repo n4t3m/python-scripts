@@ -1,9 +1,5 @@
-﻿# misc-discord-bots
+﻿# python scripts
 
-As I am a Verified Bot Developer on Discord, I spend a lot of time messing around with the discord.py API.
+A collection of useful python scripts. These can range from simple things like messing with JSON data, basic webscraping, or various Discord Bots that perform minor functions.
 
-I make a lot of small bots that, on their own, are not impresive enough to be placed in their own repo. Thus, I will throw them all here. I have ~20 bots or so I would have to "update" and remove some of the lazy coding I have done with them.
-
-A lot of bots here were made on request from users or r/discord_bots.
-
-I have also decided to open up this repository to contributions for hacktoberfest.
+Basically, stuff I make that I will need later but do not deserve their own repo go here.
